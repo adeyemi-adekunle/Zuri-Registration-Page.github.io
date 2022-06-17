@@ -90,15 +90,13 @@ header {
 .info p {
     line-height: 1.8em;
     margin-bottom: 30px;
-    width: 90%;
+ 
 }
 
 /* Form Styling */
 
-
-
 .inner_form_container {
-    margin: var(--margin);
+    margin: 5px;
  }
 
 .form-heading {
@@ -197,6 +195,12 @@ input:active {
     padding: var(--padding);
     text-align: left;
     align-items: center;
+}
+
+
+
+.info p {
+     width: 90%;
 }
 
   .heading {
