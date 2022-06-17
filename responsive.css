@@ -21,15 +21,14 @@
 
 .heading {
     font-size: 3.3em;
-    /* text-align: center; */
+   
     padding-left: 20px;
 }
 
 .info p {
-/* text-align: center; */
+
 padding-left: 20px;
 }
-
 
 .form-heading, .form {
     /* width: 100px; */
@@ -37,8 +36,6 @@ padding-left: 20px;
 }
 
 }
-
-/* Tablet View */
 
 
 /* Mobile view */
