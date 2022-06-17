@@ -44,7 +44,7 @@ header {
 }
 
 .nav-bar {
-
+    text-align: center;
     padding: var(--padding);
     margin: var(--margin);
     background-color: var(--accent) ;  
@@ -52,7 +52,6 @@ header {
 
 .code_link {
     text-decoration: none;
-
     padding: 5px;
     color: #fff;
     font-size: 1.2em;
@@ -170,6 +169,10 @@ input:active {
 
     body {
         background-image: url(images/bg-intro-desktop.png);
+    }
+
+    .nav-bar{
+    text-align: left;
     }
 
 .container {
