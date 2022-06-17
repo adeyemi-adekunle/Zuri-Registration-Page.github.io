@@ -156,7 +156,7 @@ input:active {
 .terms_condition {
     color: var(--grayish-blue);
     text-align: center;
-    white-space: nowrap;
+    white-space: wrap;
     padding-bottom: 10px;
 }
 .terms_condition  a {
