@@ -65,20 +65,20 @@ header {
 .container {
     /* width: 100%; */
     margin: var(--margin);
-    /* border: 1px solid red; */
+   
 }
 
 .register_page {
     padding:var(--padding);
     margin: var(--margin);
-    /* border: 1px solid green; */
+   
 }
 
 .info {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 10px;
-    /* border: 1px solid brown; */
+  
 }
 
 .heading {
