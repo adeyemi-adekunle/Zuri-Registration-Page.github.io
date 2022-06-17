@@ -1,58 +1,58 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Color */
+    --margin: 10px;
+    --padding: 10px;
+            /* Color */
     --primary-color-red: hsl(0, 100%, 74%) ;
     --primary-color-green: hsl(154, 59%, 51%);
     --btn_hover: hsl(154, 45%, 62%);
     --accent: hsl(248, 32%, 49%);
-    /* Neutral */
-    --dark-blue: hsl(249, 10%, 26%);
-    --grayish-blue:hsl(246, 25%, 77%);
-    /* Typography */
-    --font-size: 16px;
-    /* Maring and padding */
-    --padding: 1.5em;
-    --margin: 1.5em;
-    
-
+     /* Neutral */
+     --dark-blue: hsl(249, 10%, 26%);
+     --grayish-blue:hsl(246, 25%, 77%);
+     /* Typography */
+     --font-size: 16px;
+     /* Maring and padding */
 }
+
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
+
 
 body {
     font-size: var(--font-size);
     background-color: var(--primary-color-red);
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(images/bg-intro-mobile.png);
     color: #fff;
   
 }
 
 
-
-
 /* nav-bar */
 header {
-    /* border: 1px solid red; */
-    padding: 10px;
+  
+    margin: var(--margin);
+  
 }
 
 .nav-bar {
-    /* border: 1px solid yellow; */
-    padding: 15px;
-    margin: 10px;
+
+    padding: var(--padding);
+    margin: var(--margin);
     background-color: var(--accent) ;  
 }
 
 .code_link {
     text-decoration: none;
-    /* border: 1px solid blue; */
-    margin-left: 80px;
+
     padding: 5px;
     color: #fff;
     font-size: 1.2em;
@@ -62,92 +62,64 @@ header {
     color:hsl(0, 57%, 83%); 
 }
 
-
 .container {
-    width: 1440px;
-    max-width: 100%;
-    margin: 0 auto;
-    /* height: 100vh; */
-    /* border: 1px solid green; */
-
+    /* width: 100%; */
+    margin: var(--margin);
+    /* border: 1px solid red; */
 }
 
 .register_page {
-    display: flex;
-    /* border: 1px solid red; */
-    padding: var(--padding);
+    padding:var(--padding);
     margin: var(--margin);
-    /* height: 80vh; */
-
-   
+    /* border: 1px solid green; */
 }
 
 .info {
-    display: flex;
-    /* border: 1px solid blue; */
-    width: 100%;
-    padding: 10px 20px 10px 20px;
-    justify-content: center;
-    align-items: center;
-  
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    /* border: 1px solid brown; */
 }
 
- .heading {
-  /* border: 1px solid yellow; */
-    font-size: 3.5em;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 50px;
-
+.heading {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+ 
 }
 
 .info p {
-    /* border: 1px solid green; */
-  
-    line-height: 1.5em;
-    margin-top: 20px;
-    padding-left: 50px;
-    
-    
+    line-height: 1.8em;
+    margin-bottom: 30px;
 }
 
+/* Form Styling */
 
-/* Form styling */
 
-.outer_container {
-    width: 100%;
-}
 
 .inner_form_container {
-    width: 100%;
-    margin: 0 auto;
-    /* border: 1px solid green; */
-  
-}
+    margin: var(--margin);
+ }
 
-.form-heading  {
-    padding: 15px;
-    background-color: var(--accent);
-    color: white;
-    border-radius: 5px;
-    margin: 20px 50px;
-    text-align: center;
+.form-heading {
+     padding: 15px;
+     border-radius: 5px;
+     background-color: var(--accent);
+
 }
 
 .form {
-    margin: 20px 50px;
-    /* border: 1px solid yellow; */
-    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
     border-radius: 5px;
-    background-color: white;
 }
+
 
 .register-grp {
     display:flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
     
 }
 
@@ -191,3 +163,39 @@ input:active {
     color: var(--primary-color-red);
 }
 
+
+@media only screen and (min-width: 600px){
+
+    body {
+        background-image: url(images/bg-intro-desktop.png);
+    }
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+    
+}
+ .register_page {
+    display: flex;
+    padding: var(--padding);
+ }
+
+ 
+.outer_form_container {
+    width: 50%;
+    padding: 15px;
+}
+
+.info {
+    display:flex ;
+    width: 50%;
+    padding: var(--padding);
+    text-align: left;
+    align-items: center;
+}
+
+  .heading {
+    font-size: 3.5em;
+
+  }
+}
