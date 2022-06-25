@@ -173,6 +173,7 @@ input:active {
 
     body {
         background-image: url(images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
     }
 
     .nav-bar{
