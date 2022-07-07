@@ -109,6 +109,7 @@ header {
      border-radius: 5px;
      background-color: var(--accent);
      text-align: center;
+    
 
 }
 
@@ -167,6 +168,37 @@ input:active {
 .terms_condition  a {
     color: var(--primary-color-red);
 }
+
+/* Active or Invalid State */
+
+input:invalid {
+    outline: none;
+    border: none;
+    border: 1px solid var(--primary-color-green);
+}
+
+input:required:invalid {
+    outline: none;
+    border: none;
+    border: 1px solid var(--primary-color-red);
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+
+input:invalid+span {
+    display:inline;
+    color: var(--primary-color-red);
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: end;
+}
+
+span {
+    display: none;
+}
+
 
 /* For Desktop */
 @media only screen and (min-width: 600px){
