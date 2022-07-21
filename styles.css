@@ -182,7 +182,7 @@ input:required:invalid {
     outline: none;
     border: none;
     border: 1px solid var(--primary-color-red);
-    background-image: url(/images/icon-error.svg);
+    background-image: url(images/icon-error.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-origin: content-box;
